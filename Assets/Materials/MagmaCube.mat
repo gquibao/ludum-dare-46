@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4503671857482457570
+--- !u!114 &-6810589275802661037
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water
+  m_Name: MagmaCube
   m_Shader: {fileID: -6465566751694194690, guid: 87516fced183ce44195b299f962d71aa,
     type: 3}
   m_ShaderKeywords: _EMISSION
@@ -82,8 +82,8 @@ Material:
     - Vector1_3B688D0B: 0
     - Vector1_46C532A9: 1
     - Vector1_8ACE83F7: 5
-    - Vector1_B2D4E0DD: 4
-    - Vector1_D671FD19: 5
+    - Vector1_B2D4E0DD: 6.27
+    - Vector1_D671FD19: 5.8
     - Vector1_DCC33D50: 1
     - _AlphaClip: 0
     - _Blend: 0
@@ -111,10 +111,10 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2D01E872: {r: 0, g: 0.82268715, b: 1, a: 0}
-    - Color_B9512EE3: {r: 0, g: 1, b: 1, a: 0}
+    - Color_2D01E872: {r: 0.6698113, g: 0, b: 0.05778772, a: 0}
+    - Color_B9512EE3: {r: 1, g: 0.35315964, b: 0, a: 0}
     - Vector2_635AD5CE: {r: 0.1, g: 0.1, b: 0, a: 0}
-    - _BaseColor: {r: 0.16862746, g: 0.5991935, b: 0.8, a: 1}
-    - _Color: {r: 0.16862746, g: 0.5991935, b: 0.8, a: 1}
-    - _EmissionColor: {r: 0.009789959, g: 0.1714222, b: 0.41509432, a: 1}
+    - _BaseColor: {r: 0.8018868, g: 0.17021184, b: 0.17021184, a: 1}
+    - _Color: {r: 0.8018868, g: 0.17021184, b: 0.17021184, a: 1}
+    - _EmissionColor: {r: 0.3584906, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

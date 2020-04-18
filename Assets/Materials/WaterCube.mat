@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water
+  m_Name: WaterCube
   m_Shader: {fileID: -6465566751694194690, guid: 87516fced183ce44195b299f962d71aa,
     type: 3}
   m_ShaderKeywords: _EMISSION
@@ -80,11 +80,11 @@ Material:
     m_Floats:
     - Vector1_133D5494: 0
     - Vector1_3B688D0B: 0
-    - Vector1_46C532A9: 1
+    - Vector1_46C532A9: 2
     - Vector1_8ACE83F7: 5
-    - Vector1_B2D4E0DD: 4
+    - Vector1_B2D4E0DD: 5
     - Vector1_D671FD19: 5
-    - Vector1_DCC33D50: 1
+    - Vector1_DCC33D50: 0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -111,8 +111,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_2D01E872: {r: 0, g: 0.82268715, b: 1, a: 0}
-    - Color_B9512EE3: {r: 0, g: 1, b: 1, a: 0}
+    - Color_2D01E872: {r: 0.18222678, g: 0.5356309, b: 0.6132076, a: 0}
+    - Color_B9512EE3: {r: 0.006674961, g: 0.4716981, b: 0.4716981, a: 0}
     - Vector2_635AD5CE: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _BaseColor: {r: 0.16862746, g: 0.5991935, b: 0.8, a: 1}
     - _Color: {r: 0.16862746, g: 0.5991935, b: 0.8, a: 1}
