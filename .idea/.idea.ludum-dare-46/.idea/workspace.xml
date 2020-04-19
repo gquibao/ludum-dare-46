@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7013d00-bdbc-487b-bfa1-0620c559902f" name="Default Changelist" comment="" />
+    <list default="true" id="b7013d00-bdbc-487b-bfa1-0620c559902f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ludum-dare-46/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ludum-dare-46/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ludum-dare-46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ludum-dare-46/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +91,7 @@
       <updated>1587229595712</updated>
       <workItem from="1587229620385" duration="29460000" />
       <workItem from="1587314279740" duration="680000" />
-      <workItem from="1587315239226" duration="1290000" />
+      <workItem from="1587315239226" duration="1943000" />
     </task>
     <servers />
   </component>
