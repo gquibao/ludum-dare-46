@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private int _spawnTime = 15;
     public int groundAmount = 4;
     public GameObject gameOverObject;
+    public GameObject tutorialCanvas;
     public GameObject waterCubePrefab;
     public GameObject waterGroundPrefab;
     public GameObject magmaCubePrefab;
@@ -31,10 +32,13 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
-        gameOverObject.SetActive(false);
         SpawnGround();
+        tutorialCanvas.SetActive(true);
+        yield return new WaitForSeconds(3);
+        Destroy(tutorialCanvas, 5);
+        gameOverObject.SetActive(false);
         StartCoroutine(SpawnElementals());
         _countdownCoroutine = StartCoroutine(Countdown());
     }
