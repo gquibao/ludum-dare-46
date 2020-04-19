@@ -89,9 +89,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
+      propertyPath: audioClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
       propertyPath: habitat
       value: Water
       objectReference: {fileID: 0}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 532a7f9650d0a824285364dffd8779a5, type: 3}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: f75cf420fc525da40ad4746ce4811ffc, type: 3}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 55aecc0ea9879aa4ab7e962fbb456d22, type: 3}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: da8aaff1ada70264581b51fa05726b49, type: 3}
     - target: {fileID: 1631833315457884000, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r

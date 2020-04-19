@@ -89,9 +89,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
+      propertyPath: audioClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
       propertyPath: habitat
       value: Magma
       objectReference: {fileID: 0}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 13f2942ea3e150843b63ac123a4e36f7, type: 3}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a2a3b30a2b429eb4b9f0f618e96c4f22, type: 3}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: e6584dae511190c418daf6c95c92f90b, type: 3}
+    - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: audioClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 93a85f34dde3e4a46afc8c70b7675a15, type: 3}
     - target: {fileID: 1631833315457884000, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: looping

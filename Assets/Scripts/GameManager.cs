@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private int _time = 0;
     private int _minutes = 0;
     private int _seconds = 0;
-    private int _spawnTime = 15;
+    public int _spawnTime = 15;
     public int groundAmount = 4;
     public GameObject gameOverObject;
     public GameObject tutorialCanvas;

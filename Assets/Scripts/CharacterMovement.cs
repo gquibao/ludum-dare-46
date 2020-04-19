@@ -14,6 +14,8 @@ public class CharacterMovement : MonoBehaviour
     private float _mouseZposition;
     [SerializeField] private string habitat; 
     private Coroutine _movementCoroutine;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] audioClips;
 
     private void Awake()
     {
@@ -30,6 +32,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
+        PlayRandomSound();
         Cursor.visible = false;
         _mouseZposition = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         _mouseOffset = gameObject.transform.position - GetMouseWorldPosition();
@@ -64,6 +67,14 @@ public class CharacterMovement : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void PlayRandomSound()
+    {
+        audioSource.Stop();
+        var random = Random.Range(0, audioClips.Length);
+        audioSource.clip = audioClips[random];
+        audioSource.Play();
+    }
+    
     private Vector3 GetMouseWorldPosition()
     {
         var mousePosition = Input.mousePosition;
