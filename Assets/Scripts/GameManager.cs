@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,11 +15,15 @@ public class GameManager : MonoBehaviour
     private int _minutes = 0;
     private int _seconds = 0;
     private int _spawnTime = 15;
+    public int groundAmount = 4;
     public GameObject gameOverObject;
     public GameObject waterCubePrefab;
+    public GameObject waterGroundPrefab;
     public GameObject magmaCubePrefab;
-    public Transform waterStartingPoint;
-    public Transform magmaStartingPoint;
+    public GameObject magmaGroundPrefab;
+    public List<GameObject> magmaTiles;
+    public List<GameObject> waterTiles;
+    public Transform[] groundPositons;
     private Coroutine _countdownCoroutine;
 
     private void Awake()
@@ -28,8 +34,45 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         gameOverObject.SetActive(false);
-        SpawnCubes();
+        SpawnGround();
+        StartCoroutine(SpawnElementals());
         _countdownCoroutine = StartCoroutine(Countdown());
+    }
+
+    private void SpawnGround()
+    {
+        var magma = 0;
+        var water = 0;
+        foreach (var groundPosition in groundPositons)
+        {
+            var random = Random.Range(0, 2);
+            if (random == 0)
+            {
+                if (magma < groundAmount)
+                {
+                    magmaTiles.Add(Instantiate(magmaGroundPrefab, groundPosition.position, Quaternion.identity));
+                    magma++;
+                }
+                else
+                {
+                    waterTiles.Add(Instantiate(waterGroundPrefab, groundPosition.position, Quaternion.identity));
+                    water++;
+                }
+            }
+            else
+            {
+                if (water < groundAmount)
+                {
+                    waterTiles.Add(Instantiate(waterGroundPrefab, groundPosition.position, Quaternion.identity));
+                    water++;
+                }
+                else
+                {
+                    magmaTiles.Add(Instantiate(magmaGroundPrefab, groundPosition.position, Quaternion.identity));
+                    magma++;
+                }
+            }
+        }
     }
 
     IEnumerator Countdown()
@@ -39,7 +82,7 @@ public class GameManager : MonoBehaviour
         {
             if (spawnTimer == _spawnTime)
             {
-                SpawnCubes();
+                StartCoroutine(SpawnElementals());
                 spawnTimer = 0;
             }
 
@@ -50,10 +93,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void SpawnCubes()
+    IEnumerator SpawnElementals()
     {
-        Instantiate(magmaCubePrefab, magmaStartingPoint.position, Quaternion.identity);
-        Instantiate(waterCubePrefab, waterStartingPoint.position, Quaternion.identity);
+        var random = Random.Range(0, groundAmount);
+        var timeBetweenSpawn = Random.Range(0, 3);
+        Instantiate(magmaCubePrefab, magmaTiles[random].transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(timeBetweenSpawn);
+        Instantiate(waterCubePrefab, waterTiles[random].transform.position, Quaternion.identity);
     }
 
     private void ShowTimer(TMP_Text text)

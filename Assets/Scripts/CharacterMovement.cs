@@ -7,11 +7,11 @@ using Random = UnityEngine.Random;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
+    private Animator _animator;
     private NavMeshAgent _agent;
     private Vector3 _mouseOffset;
     private int _distance = 10;
     private float _mouseZposition;
-    private float _waitingTime;
     [SerializeField] private string habitat; 
     private Coroutine _movementCoroutine;
 
@@ -22,6 +22,9 @@ public class CharacterMovement : MonoBehaviour
 
     private void Start()
     {
+        _animator = GetComponent<Animator>();
+        var random = Random.Range(2f, 150f);
+        _animator.SetFloat("AnimationOffset", random);
         _movementCoroutine = StartCoroutine(Movement());
     }
 
@@ -81,11 +84,10 @@ public class CharacterMovement : MonoBehaviour
 
     private IEnumerator Movement()
     {
-        _waitingTime = Random.Range(2, 5);
         _agent.isStopped = false;
         var targetPosition = GetNextPosition();
         _agent.destination = targetPosition;
-        yield return new WaitForSeconds(_waitingTime);
+        yield return new WaitForSeconds(2);
         _movementCoroutine = StartCoroutine(Movement());
     }
 }

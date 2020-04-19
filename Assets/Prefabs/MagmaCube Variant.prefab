@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 428285925629714812, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ff4a9b141aedc043894dffcafd3d501, type: 2}
+    - target: {fileID: 1510265585039517832, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1510265585039517835, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15,17 +25,17 @@ PrefabInstance:
     - target: {fileID: 1510265585039517837, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1510265585039517837, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.28
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1510265585039517837, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.266568
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1510265585039517837, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
@@ -80,6 +90,16 @@ PrefabInstance:
     - target: {fileID: 1510265585039517879, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
         type: 3}
       propertyPath: habitat
+      value: Magma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631833315457884000, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177354150500773482, guid: 97edf8f4a95b1fd4a8a07d708f7441f4,
+        type: 3}
+      propertyPath: m_TagString
       value: Magma
       objectReference: {fileID: 0}
     m_RemovedComponents: []
